@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express"); // import the express
 const app = express(); //import express
 
-const PORT = 3000; // port are present in memory
+// const PORT = 2000; // port are present in memory
 
 app.get("/", (req, res) => {
   // listen at '/' ...... pass the anather function
@@ -17,5 +17,5 @@ app.get("/login", (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${PORT}`);
+  console.log(`Example app listening on port ${process.env.PORT}`);
 });
